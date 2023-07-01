@@ -126,8 +126,27 @@ namespace InterfaceAbstractExample.Concrete
                 Console.WriteLine("Game Name: "+ item.Name);
                 Console.WriteLine("Game Price: "+ item.Price);
             }
-         
-         
+        }
+
+        public void GameSale(User user, List<Game> game, Campaign campaign)
+        {
+            User _user = _gameSaleManager.GameSale(users, user.Id, game, campaign);
+            Console.WriteLine("--------USER------");
+
+            Console.WriteLine("User Id: " + _user.Id);
+            Console.WriteLine("User TcNo: " + _user.TcNo);
+            Console.WriteLine("User First Name: " + _user.FirstName);
+            Console.WriteLine("User Last Name: " + _user.LastName);
+            Console.WriteLine("User BirthDay: " + _user.BirthDay);
+
+            Console.WriteLine("GAME SALES");
+            foreach (var item in _user.GameSale)
+            {
+                Console.WriteLine("---------------------");
+                Console.WriteLine("Game Id: " + item.Id);
+                Console.WriteLine("Game Name: " + item.Name);
+                Console.WriteLine("Game Price: " + item.Price);
+            }
         }
     }
 }

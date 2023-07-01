@@ -58,3 +58,4 @@ D:\yazılım geliştirici yetiştirme kampı\kendi denemelerim\GameSimulation\Ga
 D:\yazılım geliştirici yetiştirme kampı\kendi denemelerim\GameSimulation\GameSimulation\obj\Debug\net7.0\GameSimulation.pdb
 D:\yazılım geliştirici yetiştirme kampı\kendi denemelerim\GameSimulation\GameSimulation\obj\Debug\net7.0\GameSimulation.genruntimeconfig.cache
 D:\yazılım geliştirici yetiştirme kampı\kendi denemelerim\GameSimulation\GameSimulation\obj\Debug\net7.0\ref\GameSimulation.dll
+D:\yazılım geliştirici yetiştirme kampı\kendi denemelerim\GameSimulation\GameSimulation\bin\Debug\net7.0\Newtonsoft.Json.dll

@@ -11,5 +11,6 @@ namespace InterfaceAbstractExample.Abstract
     public interface IGameSaleManager
     {
         User GameSale(List<User> users, int userId, List<Game> game);
+        User GameSale(List<User> users, int userId, List<Game> game, Campaign campaign);
     }
 }

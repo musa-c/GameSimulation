@@ -13,7 +13,7 @@ namespace InterfaceAbstractExample.Concrete
         List<Campaign> campaigns = new();
         public Campaign Create(Campaign campaign)
         {
-            if(campaigns.Any(x => x.Id != campaign.Id))
+            if(!campaigns.Any(x => x.Id == campaign.Id))
             {
                 campaigns.Add(campaign);
                 return campaign;
@@ -28,7 +28,7 @@ namespace InterfaceAbstractExample.Concrete
         {
             if(campaigns.Any(x => x.Id == Id))
             {
-                _ = campaigns.Remove(campaigns.FirstOrDefault(x => x.Id == Id));
+                _ = campaigns.Remove(campaigns.FirstOrDefault(x => x.Id == Id)!);
             }
             else
             {
@@ -40,9 +40,9 @@ namespace InterfaceAbstractExample.Concrete
         {
             if (campaigns.Any(x => x.Id == id))
             {
-                Campaign campaign = campaigns.FirstOrDefault(x => x.Id == id);
-                campaign!.Name = "Updated Campaign";
-                campaign.Percentage = "Updated Percentage";
+                Campaign campaign = campaigns.FirstOrDefault(x => x.Id == id)!;
+                campaign!.Name = updatecampaign.Name;
+                campaign.Percentage = updatecampaign.Percentage;
                 return campaign;
             }
             else
